@@ -106,27 +106,49 @@ Distribuido: pode ter o repositorio na nuvem com o codigo mais recente (master|m
 ### Comandos GIT
 
 `git --version` -> exibe a versão
+
 `git init` -> inicializa o versionamento
+
 `git add *` -> transfere para Index todos os arquivos
+
 `git add -A` -> transfere para Index todos os arquivos modificados
+
 `git add *.js`-> transfere para Index todos os arquivos de determinada extensão
+
 `git commit` -> transfere para o HEAD
+
 `git commit -m "comenta"` -> transfere para o HEAD sem abrir o editor para comentar
+
 `git commit --amend -m "comentario novo"` -> altera o comentario do ultimo commit
+
 `git status` -> verifica se existe algo não comitado na area temporaria
+
 `gitk` -> ferramenta grafica para visualizar o projeto
-`git branch` -> visualiza os branchs disponiveis no repo
+
+`git branch` -> visualiza os branchs disponiveis no repositorio
+
 `git checkout g` -> cria um branch para não cagar o projeto
+
 `git checkout <master>` -> retorna para o "branch" mestre do projeto
+
 `git merge <branch>`-> faz um merge do branch qual está situado (geralmente master) com a versao do branch que deseja adicionar, geralmente quando tudo deu certo e vamos colocar o codigo desenvolvido em produção
+
 `git branch -d <branch>`-> remove o branch 
+
 `git log` -> visualiza o log de commit do git
 
+
 `git remote add origin <endereço do repositorio remoto>` -> adicionar o remoto no projeto
+
 `git push -u origin master` -> push no remoto
+
 `git pull` -> tras do remoto direto para o workspace
+
 `git fetch --all` -> tras os branchs do remoto ??? (não deu pra perceber utilidade)
 
 `git log --oneline`
+
 `git log -p`
+
 `git log --pretty="parametros de formatação"`
+

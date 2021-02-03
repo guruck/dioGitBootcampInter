@@ -85,10 +85,10 @@ Distribuido: pode ter o repositorio na nuvem com o codigo mais recente (master|m
  
 
 #### FLUXO DE OPERAÇÃO*
- Workspace - Arquivos na area de trabalho
- Index - Area temporaria
- Head - Repositorio Local
- REMOTO - Repositorio Remoto
+ * Workspace - Arquivos na area de trabalho (Working Directory)
+ * Index - Area temporaria (Staging Area)
+ * Head - Repositorio Local (Local Repository)
+ * REMOTO - Repositorio Remoto (Remote Repository)
 
 |comando       | base | Caminho percorrido pelo arquivo   |
 | ------------ | ---- | --------------------------------  |

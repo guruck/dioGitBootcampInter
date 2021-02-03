@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style >
+    table, th, td {
+      
+      border: 2px solid blue; 
+      border-collapse: collapse;
+    }
+    table{
+      width: 80%;
+    }
+    td{
+      text-align: center;
+      width: 25%;
+    }
+    thead{
+      height: 50px;
+      font-weight: bolder; 
+      background-color: lightsteelblue;
+    }
+  </style>
+</head>
+<body>
+  Quando usamos o comando "git init" é de fato inicializado o repositorio local do GIT.
+  <BR/><img src="./lifeCycle_20210202_2309-20.png" alt="ciclo de vida" /><BR/>
+
+  <BR/>=> Quando criamos o arquivo ele nasce como Untracked, apos o add, ele muda para Tracked
+  <BR/>=> Ao editar o arquivo ele fica com estado de Modified
+  <BR/>=> executando add nesse arquivo Modified ele passa para STAGED aguardando a ação de commit
+  <BR/>=> Ao remover o arquivo ele volta para Untracked<BR/>
+
+  <BR>
+    <BR/>=> O STAGED é a area que monta o pacote que vai ser o envelope do Commit
+    <BR/>=> à partir do Commit, todos os arquivos voltam para Unmodified e ficam salvos no Commit (SnapShoot)
+    <BR/><BR/>
+              TRACKED
+              <BR/>Untracked >> Unmodified >> Modified >> Staged<BR/>
+<table >
+  <Thead >
+    <Tr >
+      <td>Untracked</td>
+      <td>Unmodified</td>
+      <td>Modified</td>
+      <td>Staged</td>
+    </Tr>
+  </Thead>
+  <tbody>
+    <TR>
+      <td colspan="4">
+        adiciona o arquivo => Staged
+      </td>
+    </TR>
+    <TR>
+      <td>&nbsp;</td>
+      <td colspan="2">
+        edita o arquivo => Modified
+      </td>
+      <td>&nbsp;</td>
+    </TR>
+    <TR>
+      <td colspan="3">&nbsp;</td>
+      <td>
+        add modificado => Staged
+      </td>
+    </TR>
+    <TR>
+      <td>Untracked <= remover arquivo</td>
+      <td colspan="3">&nbsp;</td>
+    </TR>
+    <TR>
+      <td>&nbsp;</td>
+      <td colspan="3">Unmodified <= Commit</td>
+    </TR>
+  </tbody>
+</table>
+<BR/><img src="./lifeCycle2_20210202_2309-20.png" alt="ciclo de vida" /><BR/>
+
+
+</body>
+</html>
